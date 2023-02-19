@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" defer>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="_img/finn-TQMvFFmCzO0-unsplash.jpg">
+        </header>
+        <section>
+            <h1>Registration Form</h1>
+            <p>Fill the the fields and make your registration.</p>
+            <p>This is a fake formulary and should be use just for test.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    
+                    <div>
+                        <label for="usrf_name">First name:</label>
+                        <input type="text" id="usrf_name" name="first_name" required>
+
+                        <label for="usrl_name">Last name:</label>
+                        <input type="text" id="usrl_name" name="last_name" required>
+                    </div>
+
+                    <div>
+                        <label for="usr_country">Country:</label>
+                        <select id="usr_country" name="country">
+                            <optgroup label="europe">
+                                <option value="france">France</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="germany">Germany</option>
+                                <option value="spain">Spain</option>
+                            </optgroup>
+                            <optgroup label="north america">
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="mexico">Mexico</option>
+                            </optgroup>
+                            <optgroup label="south america">
+                                <option value="brasil" selected>Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="venezuela">Venezuela</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="dof">Brithday:</label>
+                        <input type="date" id="usr_dob" name="birthday" required>
+
+                        <label for="age">Age:</label>
+                        <input type="number" id="usr_age" name="age" disabled required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <div>
+                        <label for="usr_email">Email:</label>
+                        <input type="email" id="usr_email" name="email" required>  
+                    </div>
+                    <div>
+                        <label for="usr_tel">Phone:</label>
+                        <input type="tel" id="usr_tel" name="phone" required> 
+                    </div>
+                    <div>
+                        <label for="usr_addresss">Address:</label>
+                        <input type="text" id="usr_address" name="address" required>
+                        
+                        <label for="usr_number">Number:</label>
+                        <input type="text" id="usr_number" name="number" required> 
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="register">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
